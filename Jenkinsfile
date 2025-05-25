@@ -10,7 +10,7 @@ pipeline {
     stages {
         stage('Checkout Code') {
             steps {
-                git 'https://github.com/snehabopche/docker-sample-app.git'
+                git branch: 'main', url: 'https://github.com/snehabopche/docker-sample-app.git'
             }
         }
 
